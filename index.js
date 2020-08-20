@@ -7,6 +7,6 @@ const PORT = process.env.PORT;
 
 const app = express();
 
-app.get("/", (req, res) => res.send("Hi"));
+app.get("/", (req, res) => res.send("Hello"));
 
 app.listen(PORT, () => console.log(`Server Connect Success in ${PORT} `));
