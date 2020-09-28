@@ -5,8 +5,10 @@ import RegisterPage from "./components/views/RegisterPage/RegisterPage";
 import LoginPage from "./components/views/LoginPage/LoginPage";
 import ProfilePage from "./components/views/profilePage/ProfilePage";
 import Auth from "./hoc/auth";
-import Reaction from "./components/views/Reaction/Reaction";
-import Rsp from "./components/views/Rsp/Rsp";
+// import Reaction from "./components/views/Reaction/Reaction";
+// import Rsp from "./components/views/Rsp/Rsp";
+// import Lotto from "./components/views/Lotto/Lotto";
+import CommentPage from "./components/views/CommentPage.js/CommentPage";
 
 function App() {
   return (
@@ -17,8 +19,10 @@ function App() {
           <Route exact path="/login" component={Auth(LoginPage, false)} />
           <Route exact path="/signUp" component={Auth(RegisterPage, false)} />
           <Route exact path="/profile" component={Auth(ProfilePage, true)} />
-          <Route exact path="/reaction" component={Reaction} />
+          {/* <Route exact path="/reaction" component={Reaction} />
           <Route exact path="/rsp" component={Rsp} />
+          <Route exact path="/lotto" component={Lotto} /> */}
+          <Route exact path="/commentPage" component={CommentPage} />
         </Switch>
       </div>
     </Router>

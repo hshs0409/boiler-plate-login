@@ -6,6 +6,8 @@ const PROFILE = "/profile";
 
 const USERS = "/api/users";
 
+const COMMENT = "/api/comment";
+
 const routes = {
   signUp: SIGN_UP,
   signIn: SIGN_IN,
@@ -13,6 +15,7 @@ const routes = {
   auth: AUTH,
   profile: PROFILE,
   users: USERS,
+  comment: COMMENT,
 };
 
 export default routes;

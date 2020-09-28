@@ -3,8 +3,9 @@ import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import userRouter from "./route/userRouter";
 import routes from "./routes";
+import userRouter from "./route/userRouter";
+import commentRouter from "./route/commentRouter";
 
 dotenv.config();
 
@@ -28,6 +29,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.use(routes.users, userRouter);
+app.use(routes.comment, commentRouter);
 
 app.listen(PORT, () =>
   console.log(`Server Connect Success in port ${PORT} ✅✅`)
